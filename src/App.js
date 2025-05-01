@@ -11,7 +11,7 @@ function App() {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/posts");
+      const res = await axios.get("https://blog-backend-lngb.onrender.com/api/posts");
       setPosts(res.data);
       setLoading(false);
     } catch (err) {
